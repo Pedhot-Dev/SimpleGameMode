@@ -3,7 +3,7 @@ main: pedhot\SimpleGamemode\Main
 api:
   3.10.0
 author: Pedhott
-version: 1.0
+version: 1.0-beta
 
 commands:
   gms:
