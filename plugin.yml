@@ -1,0 +1,35 @@
+name: SimpleGameMode
+main: pedhot\SimpleGamemode\Main
+api:
+  3.10.0
+author: Pedhott
+version: 1.0
+
+commands:
+  gms:
+    description: "Survival"
+  gmc:
+    description: "Creative"
+  gma:
+    description: "Adventure"
+  gmspc:
+    description: "Spectator"
+
+permissions:
+  gms.command:
+    default: op
+  gma.command:
+    default: op
+  gmc.command:
+    default: op
+  gmsps.command:
+    default: op
+
+  gms.other:
+    default: op
+  gma.other:
+    default: op
+  gmc.other:
+    default: op
+  gmsps.other:
+    default: op
