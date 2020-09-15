@@ -4,7 +4,6 @@ namespace pedhot\SimpleGamemode;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\Player;
