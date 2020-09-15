@@ -10,11 +10,10 @@ use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase implements Listener
+class Main extends PluginBase
 {
     public function onEnable()
     {
-        Server::getInstance()->getPluginManager()->registerEvents($this, $this);
         $this->getLogger()->info("Plugin Enabled");
     }
 
@@ -29,8 +28,7 @@ class Main extends PluginBase implements Listener
                 if ($sender->hasPermission("gms.command")){
                     if (!$sender instanceof Player){
                         $sender->sendMessage("in Game only");
-                    }
-                    if ($sender instanceof Player){
+                    }else{
                         if(count($args) < 1) {
                             $sender->sendMessage("Gamemode changed to Survival mode");
                             $player->setGamemode(0);
@@ -55,8 +53,7 @@ class Main extends PluginBase implements Listener
                 if ($sender->hasPermission("gmc.command")){
                     if (!$sender instanceof Player){
                         $sender->sendMessage("In Game only");
-                    }
-                    if ($sender instanceof Player){
+                    }else{
                         if(count($args) < 1) {
                             $sender->sendMessage("Gamemode changed to Creative mode");
                             $player->setGamemode(1);
@@ -81,8 +78,7 @@ class Main extends PluginBase implements Listener
                 if ($sender->hasPermission("gma.command")){
                     if (!$sender instanceof Player){
                         $sender->sendMessage("In Game only");
-                    }
-                    if ($sender instanceof Player){
+                    }else{
                         if(count($args) < 1) {
                             $sender->sendMessage("Gamemode changed to Adventure mode");
                             $player->setGamemode(2);
@@ -107,8 +103,7 @@ class Main extends PluginBase implements Listener
                 if ($sender->hasPermission("gmspc.command")){
                     if (!$sender instanceof Player){
                         $sender->sendMessage("In Game only");
-                    }
-                    if ($sender instanceof Player){
+                    }else{
                         if(count($args) < 1) {
                             $sender->sendMessage("Gamemode changed to Spectator mode");
                             $player->setGamemode(3);
