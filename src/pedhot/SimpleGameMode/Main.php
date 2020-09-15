@@ -1,6 +1,6 @@
 <?php
 
-namespace pedhot\SimpleGamemode;
+namespace pedhot\SimpleGameMode;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
