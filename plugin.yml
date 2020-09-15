@@ -1,7 +1,6 @@
 name: SimpleGameMode
-main: pedhot\SimpleGamemode\Main
-api:
-  3.10.0
+main: pedhot\SimpleGameMode\Main
+api: 3.10.0
 author: Pedhott
 version: 1.0-beta
 
